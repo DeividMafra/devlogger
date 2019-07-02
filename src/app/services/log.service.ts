@@ -27,6 +27,7 @@ export class LogService {
   }
   getLogs(): Observable<Log[]> {
 
+    // getting from localStorage
     if (localStorage.getItem('logs') === null) {
       this.logs = [];
 
